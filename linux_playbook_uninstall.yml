@@ -1,0 +1,16 @@
+- name: Remove Standard Linux Playbooks
+  hosts: all
+  tasks:
+  - name: Uninstall yum modules
+    yum:
+      name:
+      - httpd
+      - git
+      - nginx
+      - postgresql
+      - postgresql-server
+      state: absent
+  - name: Remove temporary directory
+    file:
+      path: /tmp/joe
+      state: absent
