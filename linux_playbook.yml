@@ -1,10 +1,9 @@
 - name: Standard Linux Playbooks
   hosts: all
   tasks:
-  - name: Install yum modules
-    yum:
+  - name: Install apt modules
+    apt:
       name:
-      - httpd
       - git
       - nginx
       - postgresql

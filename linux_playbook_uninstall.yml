@@ -1,10 +1,9 @@
 - name: Remove Standard Linux Playbooks
   hosts: all
   tasks:
-  - name: Uninstall yum modules
-    yum:
+  - name: Uninstall apt modules
+    apt:
       name:
-      - httpd
       - git
       - nginx
       - postgresql
