@@ -1,12 +1,10 @@
 - name: Standard Linux Playbooks
   hosts: all
-  become: yes
   tasks:
   - name: Install apt modules
     yum:
       name:
       - git
-      - nginx
       - postgresql
       - postgresql-server
       state: present
