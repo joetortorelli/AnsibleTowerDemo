@@ -2,7 +2,7 @@
   hosts: all
   tasks:
   - name: Install apt modules
-    apt:
+    yum:
       name:
       - git
       - nginx
