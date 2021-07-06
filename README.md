@@ -1,2 +1,3 @@
-# AnsibleTowerDemo
-Repo for Ansible Tower Demo
+# AnsibleDemo
+
+Demonstration of Ansible's Windows & Linux capabilities
