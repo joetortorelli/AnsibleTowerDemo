@@ -1,5 +1,7 @@
 - name: Remove Standard Linux Playbooks
   hosts: all
+  become: yes
+  become_method: sudo
   tasks:
   - name: Uninstall apt modules
     yum:

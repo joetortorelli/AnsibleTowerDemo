@@ -1,5 +1,7 @@
 - name: Standard Linux Playbooks
   hosts: all
+  become: yes
+  become_method: sudo
   tasks:
   - name: Install apt modules
     yum:
