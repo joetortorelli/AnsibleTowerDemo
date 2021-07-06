@@ -1,5 +1,6 @@
 - name: Standard Linux Playbooks
   hosts: all
+  become: yes
   tasks:
   - name: Install apt modules
     yum:
