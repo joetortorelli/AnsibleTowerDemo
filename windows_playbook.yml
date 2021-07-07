@@ -1,4 +1,4 @@
-- name: Standard Windows Playbook
+- name: Windows Install Playbook
   hosts: all
   tasks:
   - name: Install chocolatey
@@ -15,3 +15,11 @@
     win_chocolatey:
       name: 7zip
       state: present
+  - name: Touch a file (creates if not present, updates modification time if present)
+    ansible.windows.win_file:
+      path: C:\Temp
+      state: directory
+  - name: Touch a file (creates if not present, updates modification time if present)
+    ansible.windows.win_file:
+      path: C:\Temp\foo
+      state: directory
