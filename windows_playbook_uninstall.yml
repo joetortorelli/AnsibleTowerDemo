@@ -5,11 +5,11 @@
     win_chocolatey:
       name: 7zip
       state: absent
-  - name: Touch a file (creates if not present, updates modification time if present)
-    ansible.windows.win_file:
-      path: C:\Temp\
+  - name: Touch a file
+    win_file:
+      path: C:\Temp
       state: absent
-  - name: Touch a file (creates if not present, updates modification time if present)
-    ansible.windows.win_file:
+  - name: Touch a file
+    win_file:
       path: C:\Temp\foo
       state: absent
